@@ -39,7 +39,6 @@ public class AuthTokenFilter extends OncePerRequestFilter {
 			throws ServletException, IOException {
 		
 		try {
-			System.out.println("여기오니????");
 			String jwt = parseJwt(request);
 			if (jwt != null && jwtUtils.validateJwtToken(jwt)) {
 				String userId = jwtUtils.getUserNameFromJwtToken(jwt);
