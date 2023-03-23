@@ -6,8 +6,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.ExchangeFilterFunction;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import com.example.mpi.scheduler.MovieApiScheduler;
-
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
 
